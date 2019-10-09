@@ -1,4 +1,10 @@
-
+// reducer boilerplate
+// const reducer = ( state, action ) {
+//     switch(action.type) {
+//         default:
+//             return state
+//     }
+// }
 
 
 export const initialState = {
@@ -36,6 +42,7 @@ export const reducer = ( state, action ) => {
                     state.tasks.filter( task => !task.completed )
                 ]
             }
+        default:
+            return state
     }
-
 }
