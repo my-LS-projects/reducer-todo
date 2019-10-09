@@ -2,16 +2,24 @@ import React from 'react';
 import './App.css';
 
 // components
-import { TodoCard } from "./components/TodoCard"
-import { TodoForm } from "./components/TodoForm"
+import { TodoList } from './components/TodoList'
+import { TodoForm } from './components/TodoForm'
+
+
+
+// create card
+// create form 
+// map cards 
+// reducer??
+
 
 
 function App() {
   return (
-    <div className="App">
-      <h1>hello</h1>
+    <div className='App'>
+      <h1>Todo List (using reducer)</h1>
       <TodoForm /> 
-      <TodoCard />
+      <TodoList />
     </div>
   );
 }
