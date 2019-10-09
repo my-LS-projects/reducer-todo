@@ -1,5 +1,5 @@
-import React, { useReducer } from 'react';
 import './App.css';
+import React, { useReducer } from 'react';
 import { initialState , reducer } from './reducers/TodoReducer'
 
 // components

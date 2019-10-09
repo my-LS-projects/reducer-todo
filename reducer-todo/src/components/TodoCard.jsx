@@ -1,7 +1,7 @@
 import React from 'react'
 
 
-export const TodoCard = () => {
+export const TodoCard = ( { task, dispatch }) => {
     return (
         <div className='todo-card'>
             <div className="todo-text">

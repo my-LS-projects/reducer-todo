@@ -1,11 +1,14 @@
 import React from 'react'
-import TodoCard from './TodoCard'
+import { TodoCard } from './TodoCard'
 
-export const TodoList = (props) => {
+export const TodoList = ( { list, dispatch } ) => {
+    
+
     return (
-        <main>
-            {console.log("LIST PROPS: ", props )}
-            Cards here
-        </main>
+        <div>
+            {console.log('LIST: ', list)}
+            {list.tasks.map( task => <TodoCard key={task.id} task={task} dispatch={dispatch}/>) }
+            <button onClick=''></button>
+        </div>
     )
 }
