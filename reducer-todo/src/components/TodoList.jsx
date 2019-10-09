@@ -10,7 +10,7 @@ export const TodoList = ( { list, dispatch } ) => {
         <div>
             {console.log('LIST: ', list)}
             {list.tasks.map( task => <TodoCard key={task.id} task={task} dispatch={dispatch}/>) }
-            <button onClick={removeCompleted}></button>
+            <button onClick={removeCompleted}>Remove completed tasks</button>
         </div>
     )
 }
